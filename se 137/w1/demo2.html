@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Demo</title>
+    <Style>
+        #simpson{
+            background-color:yellow;
+        }
+        #griffin{
+            background-color: limegreen;
+        }
+        #bundy{
+            background-color: orange;
+        }
+        .dad{
+            font-weight:bold;
+        }
+        .mom{
+            font-style:italic;
+        }
+        .son{
+            text-decoration: underline;
+        }
+        .daughter{
+            font-family: "Comic Sans MS";
+        }
+        .hide{
+            display:none;
+        }
+        .boy{
+            background-color:cyan;
+        }
+        .girl{
+            background-color:pink;
+        }
+        .parent{
+            font-size:36px;
+        }
+        .child{
+            font-size:18px;
+        }
+        #simpson p{
+            border: 3px solid black;
+        }
+        
+    </Style>
+</head>
+<body style = "color:black;">
+    <a href = "#" id = "simpson-link">show simpsons</a>
+    <a href = "#" id = "griffin-link">show griffins</a>
+    <a href = "#" id = "bundy-link">show bundys</a>
+    <a href = "#" id = "show-link">show all</a>
+    <div id="simpson">
+        <p class = "dad boy adult parent">Homer</p>
+        <p class = "mom girl adult parent">Marge</p>
+        <p class="son sibling boy child">Bart</p>
+        <p class = "daughter sibling girl child">Lisa</p>
+        <p class = "daughter sibling girl child">Maggie</p>
+    </div>
+    <div id="griffin">
+        <p class = "dad boy adult parent">Peter</p>
+        <p class = "mom girl adult parent">Lois</p>
+        <p class = "daughter sibling girl child">Meg</p>
+        <p class="son sibling boy child">Chris</p>
+        <p class="son sibling boy child">Stewie</p>
+    </div>
+    <div id="bundy">
+        <p class = "dad boy adult parent">Al</p>
+        <p class = "mom girl adult parent">Peggy</p>
+        <p class = "daughter sibling girl child">Kelly</p>
+        <p class="son sibling boy child">Bud</p>
+    </div>
+    <script>
+        //links
+        var sLink = document.querySelector(`#simpson-link`)
+        var gLink = document.querySelector(`#griffin-link`)
+        var bLink = document.querySelector(`#bundy-link`)
+        var showLink = document.querySelector(`#show-link`)
+        //divs
+        var simpson = document.querySelector(`#simpson`)
+        var griffin = document.querySelector(`#griffin`)
+        var bundy = document.querySelector(`#bundy`)
+
+        sLink.addEventListener(`click`, showSimpson)
+        function showSimpson(e)
+        {
+            //prevents default link behavior
+            e.preventDefault()
+            simpson.classList.remove(`hide`)
+            griffin.classList.add(`hide`)
+            bundy.classList.add(`hide`)
+        }
+        gLink.addEventListener(`click`, showGriffin)
+        function showGriffin(e)
+        {
+            //prevents default link behavior
+            e.preventDefault()
+            simpson.classList.add(`hide`)
+            griffin.classList.remove(`hide`)
+            bundy.classList.add(`hide`)
+        }
+        bLink.addEventListener(`click`, showBundy)
+        function showBundy(e)
+        {
+            //prevents default link behavior
+            e.preventDefault()
+            simpson.classList.add(`hide`)
+            griffin.classList.add(`hide`)
+            bundy.classList.remove(`hide`)
+        }
+        showLink.addEventListener(`click`, showAll)
+        function showAll(e)
+        {
+            e.preventDefault()
+            simpson.classList.remove(`hide`)
+            griffin.classList.remove(`hide`)
+            bundy.classList.remove(`hide`)
+        }
+        
+    </script>
+</body>
+</html>
