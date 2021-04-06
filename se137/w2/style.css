@@ -1,0 +1,112 @@
+@charset "UTF 8";
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
+body {
+    background-color:#212121;
+    font-family:'Russo One', sans-serif;
+    color: white;
+
+}
+#triforce{
+    width:80px;
+    height:70px;
+    float: left;
+}
+h1{
+    font-size: 54px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #0d9263;
+    background: rgb(8,50,32);
+    background: radial-gradient(circle, rgba(8,50,32,1) 0%, rgba(33,33,33,1) 50%);
+}
+p{
+    font-family: Helvetica, Arial, sans-serif;
+}
+h2{
+    text-decoration: underline;
+    text-decoration-color: #0d9263;
+    font-size: 36px;
+}
+.text{
+    width: 750px;
+    border: 1px solid #0d9263;
+    border-radius: 15px;
+    padding: 10px;
+}
+.button:link{
+    background-color: #313131;
+    color:white;
+    text-decoration-line: none;
+    border: 1px solid #0d9263;
+    border-radius: 25px;
+    padding: 5px;    
+}
+.button:hover{    
+    /*background-color:#062719; */
+    background-color: #083220;
+    border: 1px solid #daa520;
+}
+#nav{
+    background-color:#555555;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    text-align: center;
+    word-spacing: 30px;
+    font-size: 24px;
+    line-height: 50px;
+}
+#show-pic{
+    height:250px;
+    width:250px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+#show-pic:hover{
+
+    height:350px;
+    width:350px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+.mit:link{
+    background-color:#212121;
+    border: none;
+    border-radius: none;
+    color: #d4ce46;
+    text-decoration: underline;
+
+}
+.mit:hover{
+    background-color:#212121;
+    border: none;
+    border-radius: none;
+    color: #0d9263;
+    text-decoration: underline;
+
+}
+.mit:visited{
+    background-color: #212121;
+    border: none;
+    border-radius: none;
+    color: #daa520;
+    text-decoration: underline;
+}
+#link-pic{
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.hobby, .school{
+    font-size: 24px;
+}
+.hide{
+    display: none;
+}

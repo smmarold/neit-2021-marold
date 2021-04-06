@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Stephen Marold">
+    <meta name = "description" content = "Week 2 Demo">
+    <title>Week 2 Demo</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <a href="#">This is a Link</a>
+    <!-- 14px font-size black normal text-->
+    <div class="yellow-bg">
+        This is a Div. 
+    </div>
+    <div id="my-div">
+        This is also a div. 
+    </div>
+    <div>
+        This is ALSO a div.
+    </div>
+    <script>
+        var myDiv =document.querySelector(`#my-div`);
+        myDiv.style.border = "1px solid black";
+
+        var myDivs = document.querySelectorAll(`div`);
+        console.log(myDivs)
+        for(i =0; i<myDivs.length; i++)
+        {
+            myDivs[i].style.marginBottom = "24px";
+        }
+    </script>
+</body>
+</html>
