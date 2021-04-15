@@ -1,0 +1,115 @@
+@charset "UTF 8";
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+#header-bar{
+    grid-area: header;
+    height: 55px;
+    background: rgb(8,50,32);
+    background: linear-gradient(80deg, rgba(8,50,32,1) 0%, rgba(43,43,43,1) 54%);
+   
+    box-shadow: 4px 4px 4px black;
+}
+
+h1{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #0d9263;
+    margin: 9px;
+}
+
+#bio{
+    grid-area: bio;
+    background-color: #2b2b2b;
+    box-shadow: 4px 4px 4px black;
+}
+
+h2{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #0d9263;
+    margin: 9px;
+    padding: 5px;
+    background: rgb(8,50,32);
+    background: linear-gradient(80deg, rgba(8,50,32,1) 0%, rgba(43,43,43,1) 54%);
+}
+#bio-text-box{
+    background-color: #373737;
+    margin: 9px;
+    padding: 5px;
+}
+
+
+#hobbies{
+    grid-area: hobby;
+    background-image:url("images/LinkVGanon.jpg");
+    background-color: #2b2b2b;
+    height: 300px; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 4px 4px 4px black;
+    
+}
+
+#hobby-header{
+    width: 50%;
+    background: rgb(8,50,32);
+    background: linear-gradient(80deg, rgba(8,50,32,1) 0%, rgba(43,43,43,0) 100%);
+}
+
+.hobby{
+    margin-left: 9px;
+    font-size: 24px;
+    background-color:rgba(55, 55, 55, 0.75);
+    width:50%;
+}
+
+#ed{
+    grid-area: school;
+    background-color: #2b2b2b;
+    box-shadow: 4px 4px 4px black;
+}
+
+.school{
+    background-color: #373737;
+    margin: 9px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 24px;
+}
+
+.mit:link{
+    color: #d4ce46;
+    text-decoration: underline;
+}
+.mit:hover{
+    color: #0d9263;
+    text-decoration: underline;
+}
+.mit:visited{
+    color: #daa520;
+    text-decoration: underline;
+}
+
+#footer{
+    grid-area: footer;
+    background-color: #2b2b2b;
+    text-align: center;
+    box-shadow: 4px 4px 4px black;
+}
+
+#nav{
+    display: none;
+}
+
+body{
+    font-family:'Russo One', sans-serif;
+    background-color: #212121;
+    color: #ffffff;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'header header header'
+                        'bio bio bio'
+                        'hobby hobby school'
+                        'footer footer footer';
+}
