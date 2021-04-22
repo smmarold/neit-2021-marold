@@ -1,0 +1,16 @@
+E:\School is for fools\Software Engineering\C_Sharp\Week_4\Lab_4_SMarold\bin\Debug\net5.0\Lab_4_SMarold.exe
+E:\School is for fools\Software Engineering\C_Sharp\Week_4\Lab_4_SMarold\bin\Debug\net5.0\Lab_4_SMarold.deps.json
+E:\School is for fools\Software Engineering\C_Sharp\Week_4\Lab_4_SMarold\bin\Debug\net5.0\Lab_4_SMarold.runtimeconfig.json
+E:\School is for fools\Software Engineering\C_Sharp\Week_4\Lab_4_SMarold\bin\Debug\net5.0\Lab_4_SMarold.runtimeconfig.dev.json
+E:\School is for fools\Software Engineering\C_Sharp\Week_4\Lab_4_SMarold\bin\Debug\net5.0\Lab_4_SMarold.dll
+E:\School is for fools\Software Engineering\C_Sharp\Week_4\Lab_4_SMarold\bin\Debug\net5.0\ref\Lab_4_SMarold.dll
+E:\School is for fools\Software Engineering\C_Sharp\Week_4\Lab_4_SMarold\bin\Debug\net5.0\Lab_4_SMarold.pdb
+E:\School is for fools\Software Engineering\C_Sharp\Week_4\Lab_4_SMarold\obj\Debug\net5.0\Lab_4_SMarold.csprojAssemblyReference.cache
+E:\School is for fools\Software Engineering\C_Sharp\Week_4\Lab_4_SMarold\obj\Debug\net5.0\Lab_4_SMarold.GeneratedMSBuildEditorConfig.editorconfig
+E:\School is for fools\Software Engineering\C_Sharp\Week_4\Lab_4_SMarold\obj\Debug\net5.0\Lab_4_SMarold.AssemblyInfoInputs.cache
+E:\School is for fools\Software Engineering\C_Sharp\Week_4\Lab_4_SMarold\obj\Debug\net5.0\Lab_4_SMarold.AssemblyInfo.cs
+E:\School is for fools\Software Engineering\C_Sharp\Week_4\Lab_4_SMarold\obj\Debug\net5.0\Lab_4_SMarold.csproj.CoreCompileInputs.cache
+E:\School is for fools\Software Engineering\C_Sharp\Week_4\Lab_4_SMarold\obj\Debug\net5.0\Lab_4_SMarold.dll
+E:\School is for fools\Software Engineering\C_Sharp\Week_4\Lab_4_SMarold\obj\Debug\net5.0\ref\Lab_4_SMarold.dll
+E:\School is for fools\Software Engineering\C_Sharp\Week_4\Lab_4_SMarold\obj\Debug\net5.0\Lab_4_SMarold.pdb
+E:\School is for fools\Software Engineering\C_Sharp\Week_4\Lab_4_SMarold\obj\Debug\net5.0\Lab_4_SMarold.genruntimeconfig.cache
