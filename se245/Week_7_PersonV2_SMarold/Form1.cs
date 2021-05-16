@@ -48,6 +48,7 @@ namespace Week_6_Lab
 			else
 			{
 				/*
+				lblFeedback.ForeColor = System.Drawing.Color.Black;
 				lblFeedback.Text = tempPerson.FirstName + " " + tempPerson.MiddleName + " " + tempPerson.LastName + "\n"
 					+ tempPerson.Street1 + " " + tempPerson.Street2 + "\n" + tempPerson.City + ", " + tempPerson.State + " " + tempPerson.Zip
 					+ "\nPhone:" + tempPerson.Phone + "\nCell" + tempPerson.CellPhone + "\n" + tempPerson.Email + "\n" + tempPerson.InstagramURL;

@@ -57,20 +57,26 @@ namespace Week_6_Lab
 			instagramURL = "";
 		}
 
+		//Function for connecting to and adding a record to the database. 
 		public string AddARecord()
 		{
 			string strResult = "";
 
+			//create a new connection
 			SqlConnection Connection = new SqlConnection();
 
+			//Set the connection string property to the Server address with UN and PW. 
 			Connection.ConnectionString = @"Server=sql.neit.edu\studentsqlserver,4500;Database=SE245_SMarold;User Id=SE245_SMarold;Password=001226919;";
 
+			//Store the proper sql command in a string
 			string strSQL = "INSERT INTO PersonV2 (FirstName, MiddleName, LastName, Phone, Email, Street1, Street2, City, State, Zip, CellPhone, InstagramURL) VALUES (@FirstName, @MiddleName, @LastName, @Phone, @Email, @Street1, @Street2, @City, @State, @Zip, @CellPhone, @InstagramURL)";
 
+			//Create a new Command. Set the properties to the SQL command and Connection. 
 			SqlCommand command = new SqlCommand();
 			command.CommandText = strSQL;
 			command.Connection = Connection;
 
+			//Replace vars with the data from the PersonV2 Object. 
 			command.Parameters.AddWithValue("@FirstName", FirstName);
 			command.Parameters.AddWithValue("@MiddleName", MiddleName);
 			command.Parameters.AddWithValue("@LastName", LastName);
@@ -84,6 +90,9 @@ namespace Week_6_Lab
 			command.Parameters.AddWithValue("@CellPhone", CellPhone);
 			command.Parameters.AddWithValue("@InstagramURL", InstagramURL);
 
+
+			//Attempt to connect. If successful, execute the SQL command to add the record, and close the connection. 
+			//If unsuccessful, log and record the error message. 
 			try
 			{
 				Connection.Open();

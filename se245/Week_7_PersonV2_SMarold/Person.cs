@@ -110,7 +110,7 @@ namespace Week_6_Lab
 
 			set
 			{
-				if (ValidationLibrary.ValidateStateTwoLetters(value))
+				if (ValidationLibrary.ValidateStateTwoLetters(value.ToUpper()))
 				{
 					state = value;
 				}

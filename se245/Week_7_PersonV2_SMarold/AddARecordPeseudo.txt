@@ -1,0 +1,33 @@
+Add A Record Into a DB
+
+
+//Create a method in PV2 for adding a record. 
+
+public str AddARecord()
+{
+	create connection obj
+	//set conn string property to Server/DB Address
+	connectionObj.ConnectionString = "{Server Address Info}"
+
+	sqlStatement = "{Formatting SQL Insert Statement}"
+
+	CommandObj = new sqlCommand
+	cmd.CommandText = sqlStatement
+	cmd.Connection = connectionObj
+
+	cmd.parameters{replace parameters with PV2 objects}
+
+	try
+	{
+		open connection
+		intRecs = cmd.{execute SQL command}
+		strResult = results of command
+		close connection
+	}
+	catch (Exception err)
+	{
+		strResult = record error msg (err.Message)
+	}
+
+	return strResult
+}

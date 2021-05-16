@@ -8,18 +8,17 @@ namespace Week_6_Lab
 {
 	class ValidationLibrary
 	{
-		//Abbreviated State Validator. Currently only checks that the length is 2 characters. Will improve moving forward. 
-		//(Or just use a dropdown) 
+		//Abbreviated State Validator. Loop through the state abbrevitations, check to see if what was entered matches one of them. 
 		public static bool ValidateStateTwoLetters(string state)
 		{
-			bool result;
-			if (state.Length != 2)
+			bool result = false;
+
+			string[] statesAbbr = {"AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"};
+
+			foreach (string states in statesAbbr)
 			{
-				result =  false;
-			}
-			else
-			{
-				result =  true;
+				if (state.Contains(states))
+					result = true;
 			}
 
 			return result;
@@ -32,15 +31,23 @@ namespace Week_6_Lab
 			int dashLocation = num.IndexOf("-");
 			int lastDashLocation = num.LastIndexOf("-");
 			int numLength = num.Length;
-			bool result;
+			bool result = true;
 
-			if (dashLocation == 3 && lastDashLocation == 7 && numLength == 12)
+			if(numLength == 12 && dashLocation == 3 && lastDashLocation == 7)
 			{
-				result =  true;
+				int i = 0;
+				while (result == true && i < numLength)
+				{
+					if (i != 3 && i != 7)
+						if (!Char.IsDigit(num, i))
+							result = false;
+
+					i++;
+				}
 			}
 			else
 			{
-				result =  false;
+				result = false;
 			}
 
 			return result;
@@ -99,7 +106,7 @@ namespace Week_6_Lab
 			if (atLocation != -1 && atLocation < email.Length - 2)
 			{
 				periodLocation = email.IndexOf(".", atLocation + 2);
-				if (periodLocation != -1)
+				if (periodLocation != -1 && periodLocation + 2 < email.Length)
 				{
 					result =  true;
 				}
