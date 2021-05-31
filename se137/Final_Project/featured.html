@@ -43,6 +43,16 @@
         #footerText{
             font-size: 1rem;
         }
+        @media (min-width: 600px){
+            .dropdown{
+                display: none;
+            }
+        }
+        @media (max-width: 600px){
+            .nav{
+                display: none;
+            }
+        }
     </style>
   </head>
   <body>
@@ -57,8 +67,17 @@
       
             <ul class="nav nav-pills">
               <li class="nav-item"><a href="index.html" class="nav-link text-white" aria-current="page"><u>Home</u></a></li>
-              <li class="nav-item"><a href="#" class="nav-link link-light text-white"><u>Projects</u></a></li>
+              <li class="nav-item"><a href="projects.html" class="nav-link link-light text-white"><u>Projects</u></a></li>
             </ul>
+
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle bg-dark border-0" type="button" data-toggle="dropdown">Menu
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu" style="background-color: #343a40;">
+                <li><a href="index.html" class="text-white">Home</a></li>
+                <li><a href="projects.html" class="text-white">Projects</a></li>
+              </ul>
+            </div>
         </header>
 
         <!---------------------------------------Featured Proj ------------------------------------------->
@@ -90,14 +109,14 @@
             <div class="card-body d-flex justify-content-start">
               <div class = "row d-flex justify-content-start w-100">
               <div style="font-size: 1.25rem; font-family: 'Limelight', cursive;">
-                <a href="#" class="card-subtitle mb-2 card-link col-3 text-white"><u>More Projects</u></a></h6>
+                <a href="projects.html" class="card-subtitle mb-2 card-link col-3 text-white"><u>More Projects</u></a></h6>
                </div>
             <div style="font-size: 1.25rem; font-family: 'Limelight', cursive;">
               <a href="index.html" class="card-subtitle mb-2 card-link col-9 text-white"><u>Home Page</u></a></h6>
              </div>
              <div class="col-12">
               <h5 class="card-title box-header" style="margin-top: 10%;">Repos</h5>
-              <a href="https://github.com/smmarold/neit-2021-marold/tree/main/se137" class="card-subtitle mb-2 card-link"><u>https://github.com/smmarold/neit-2021-marold/tree/main/se137</u></a></h6>
+              <a href="https://github.com/smmarold/neit-2021-marold/tree/main/se137" target="_blank" class="card-subtitle mb-2 card-link"><u>https://github.com/smmarold/neit-2021-marold/tree/main/se137</u></a></h6>
              </div>
             </div>
              </div>

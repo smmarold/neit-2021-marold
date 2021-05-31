@@ -13,6 +13,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Limelight&family=Philosopher&display=swap');
         html, body{
             font-family: 'Philosopher', sans-serif;
+            background-color: #343a40;
         }
         .headfont{
             font-family: 'Limelight', cursive;
@@ -60,25 +61,24 @@
 
         <!---------------------------------------Header and Nav ------------------------------------------->
         <header class="d-flex flex-wrap justify-content-between py-3 border-bottom headfont bg-dark">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
+            <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
               <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
               <span>Stephen Marold | Software Engineer</span>
             </a>
       
             <ul class="nav nav-pills">
               <li class="nav-item"><a href="featured.html" class="nav-link text-white" aria-current="page"><u>Featured Project</u></a></li>
-              <li class="nav-item"><a href="#" class="nav-link link-light text-white"><u>Projects</u></a></li>
+              <li class="nav-item"><a href="projects.html" class="nav-link link-light text-white"><u>Projects</u></a></li>
             </ul>
 
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                  Menu
-                </button>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item" href="featured.html">Featured Project</a></li>
-                  <li><a class="dropdown-item" href="#">Projects</a></li>
-                </ul>
-              </div>
+              <button class="btn btn-primary dropdown-toggle bg-dark border-0" type="button" data-toggle="dropdown">Menu
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu" style="background-color: #343a40;">
+                <li><a href="featured.html" class="text-white">Featured Project</a></li>
+                <li><a href="projects.html" class="text-white">Projects</a></li>
+              </ul>
+            </div>
         </header>
 
         <!---------------------------------------Featured Proj ------------------------------------------->
@@ -120,7 +120,7 @@
                <div class="card-body d-flex flex-column justify-content-between">
                <div>
                  <h5 class="card-title box-header">Repos</h5>
-                 <a href="https://github.com/smmarold/neit-2021-marold/tree/main/se137" class="card-subtitle mb-2 card-link"><u>https://github.com/smmarold/neit-2021-marold/tree/main/se137</u></a></h6>
+                 <a href="https://github.com/smmarold/neit-2021-marold/tree/main/se137" target="_blank" class="card-subtitle mb-2 card-link"><u>https://github.com/smmarold/neit-2021-marold/tree/main/se137</u></a></h6>
                 </div>
                 <div class="d-flex flex-column" style="margin-top: 75px;">
                     <h5 class="card-title box-header">Social Links</h5>
