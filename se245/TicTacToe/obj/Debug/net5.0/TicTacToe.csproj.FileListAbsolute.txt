@@ -1,0 +1,15 @@
+E:\School is for fools\Software Engineering\C_Sharp\Gamers Guide Practice\TicTacToe\TicTacToe\obj\Debug\net5.0\TicTacToe.GeneratedMSBuildEditorConfig.editorconfig
+E:\School is for fools\Software Engineering\C_Sharp\Gamers Guide Practice\TicTacToe\TicTacToe\obj\Debug\net5.0\TicTacToe.AssemblyInfoInputs.cache
+E:\School is for fools\Software Engineering\C_Sharp\Gamers Guide Practice\TicTacToe\TicTacToe\obj\Debug\net5.0\TicTacToe.AssemblyInfo.cs
+E:\School is for fools\Software Engineering\C_Sharp\Gamers Guide Practice\TicTacToe\TicTacToe\obj\Debug\net5.0\TicTacToe.csproj.CoreCompileInputs.cache
+E:\School is for fools\Software Engineering\C_Sharp\Gamers Guide Practice\TicTacToe\TicTacToe\bin\Debug\net5.0\TicTacToe.exe
+E:\School is for fools\Software Engineering\C_Sharp\Gamers Guide Practice\TicTacToe\TicTacToe\bin\Debug\net5.0\TicTacToe.deps.json
+E:\School is for fools\Software Engineering\C_Sharp\Gamers Guide Practice\TicTacToe\TicTacToe\bin\Debug\net5.0\TicTacToe.runtimeconfig.json
+E:\School is for fools\Software Engineering\C_Sharp\Gamers Guide Practice\TicTacToe\TicTacToe\bin\Debug\net5.0\TicTacToe.runtimeconfig.dev.json
+E:\School is for fools\Software Engineering\C_Sharp\Gamers Guide Practice\TicTacToe\TicTacToe\bin\Debug\net5.0\TicTacToe.dll
+E:\School is for fools\Software Engineering\C_Sharp\Gamers Guide Practice\TicTacToe\TicTacToe\bin\Debug\net5.0\ref\TicTacToe.dll
+E:\School is for fools\Software Engineering\C_Sharp\Gamers Guide Practice\TicTacToe\TicTacToe\bin\Debug\net5.0\TicTacToe.pdb
+E:\School is for fools\Software Engineering\C_Sharp\Gamers Guide Practice\TicTacToe\TicTacToe\obj\Debug\net5.0\TicTacToe.dll
+E:\School is for fools\Software Engineering\C_Sharp\Gamers Guide Practice\TicTacToe\TicTacToe\obj\Debug\net5.0\ref\TicTacToe.dll
+E:\School is for fools\Software Engineering\C_Sharp\Gamers Guide Practice\TicTacToe\TicTacToe\obj\Debug\net5.0\TicTacToe.pdb
+E:\School is for fools\Software Engineering\C_Sharp\Gamers Guide Practice\TicTacToe\TicTacToe\obj\Debug\net5.0\TicTacToe.genruntimeconfig.cache
