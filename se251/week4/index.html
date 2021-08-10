@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+        .divByThree{
+            background-color: red;
+        }
+        .divByTwo{
+            background-color: blue;
+            
+        }
+    </style>
+
+</head>
+<body>
+    
+    <input type="text" id="textBox"/>
+    <input type="button" id="button" value="Generate Grid"/>
+
+    <table><tbody></tbody></table>
+
+    <div id="avg"></div>
+
+</body>
+</html>
+
+<script>
+
+    function randomNumber(min, max)
+    {
+        return Math.floor(Math.random() * (max-min + 1) + min)
+    }
+
+    let textBox = document.querySelector(`#textBox`)
+    let button = document.querySelector(`#button`)
+    let table = document.querySelector(`tbody`)
+    let avgDiv = document.querySelector(`#avg`)
+
+    button.addEventListener(`click`, (e) => {
+        let str = ``
+        let gridSize = Number(textBox.value) 
+
+        for(let i = 0; i < gridSize; i++)
+        {
+            str += `<tr>`
+            for(let j = 0; j < gridSize; j++)
+            {
+                str += `<td>${randomNumber(1,99)}</td>`
+            }
+            str += `</tr>`
+        }
+
+        table.innerHTML = str
+
+        let cells = document.querySelectorAll('td')
+        let avg = 0
+        let cellNum = 0;
+        for(let c = 0; c<cells.length; c++)
+        {
+            cellNum = Number(cells[c].innerText)
+            if(cellNum % 3 == 0)
+                cells[c].setAttribute(`class`, `divByThree`)
+            else if(cellNum % 2 == 0)
+                cells[c].setAttribute(`class`, `divByTwo`)
+
+            avg += cellNum
+        }
+        avg /= cells.length
+        avgDiv.innerHTML = `The Average of the Cells is ${avg}`
+
+    })
+
+
+
+</script>
