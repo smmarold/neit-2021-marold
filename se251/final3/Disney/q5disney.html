@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Disney</title>
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+	<nav>
+			<select>
+				<option value="0">Mickey</option>
+				<option value="1">Donald</option>
+				<option value="2">Goofy</option>
+			</select>
+		</nav>
+		<div id="wrapper">
+			<section>
+				<h1>Disney Characters</h1>
+				<img src="images/placeholder.png" alt="character" />
+				<p>Character Name</p>
+				<p><i>Quote Goes Here</i></p>
+			</section>
+		</div>
+		
+	<script>
+		//--Javascript goes here--
+	let selectBox = document.querySelector('select')
+	let charName = document.querySelector('#wrapper p')
+	let charQuote = document.querySelector('#wrapper i')
+	let img = document.querySelector('img')
+
+	fetch('https://se251-node.herokuapp.com/final')
+  	.then(response => response.json())
+	.then(disney => {
+		console.log(disney)
+
+		selectBox.addEventListener('change', (e) => {
+			console.log('working')
+
+
+			for(let i = 0; i<3; i++)
+			{
+				if(selectBox.value == i)
+				{
+					img.src=disney[i].image
+					charName.innerHTML = disney[i].name
+					charQuote.innerHTML = disney[i].quote
+				}
+			}
+
+
+		})
+	})
+	
+	</script>	
+	</body>
+	
+</html>
+
