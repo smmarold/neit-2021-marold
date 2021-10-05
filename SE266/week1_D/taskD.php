@@ -1,5 +1,5 @@
 <?php
-
+    //Create our task. Associative Array (feels like an object with an arrow instead of a colon)
     $task = [
         'Title' => 'Buy a Boat',
         'Due' => 'End of Year',
@@ -18,9 +18,9 @@
     <title>Task D- Associative Arrays</title>
 </head>
 <body>
-    
         <ul>
             <?php 
+                //Loop through array, display Key and Value. Key is in a strong tag for boldness. 
                 foreach ($task as $trait => $value){
                     echo "<li><strong>$trait</strong> : $value</li>";
                 }
