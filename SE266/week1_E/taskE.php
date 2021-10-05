@@ -32,6 +32,7 @@
             <li>
                 <strong>Status: </strong> 
                 <?php 
+                    //Instead of a for loop, we manually created each list item, then used an if-else to determine whether to use a check mark or incomplete. 
                     if($task['complete']){
                         echo '&#9989';
                     }
