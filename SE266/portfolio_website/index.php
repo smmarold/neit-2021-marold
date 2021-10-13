@@ -43,6 +43,6 @@
         <li><a href="../fizz_buzz/fizzBuzz.php">Week 7</a></li>
         <li><a href="../fizz_buzz/fizzBuzz.php">Week 8</a></li>
         <li><a href="../fizz_buzz/fizzBuzz.php">Week 9</a></li>
-        <li><a href="../fizz_buzz/fizzBuzz.php">Week 10</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Week 10</a></li>
     </ul>
     <?php include __DIR__ . './footer.php'; ?>
