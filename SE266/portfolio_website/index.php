@@ -35,14 +35,14 @@
     <h2>My Assignments</h2>
     <ul>
         <li><a href="../fizz_buzz/fizzBuzz.php">Week 1-Fizz Buzz</a></li>
-        <li><a href="../fizz_buzz/fizzBuzz.php">Week 2 Intake Form</a></li>
-        <li><a href="../fizz_buzz/fizzBuzz.php">Week 3</a></li>
-        <li><a href="../fizz_buzz/fizzBuzz.php">Week 4</a></li>
-        <li><a href="../fizz_buzz/fizzBuzz.php">Week 5</a></li>
-        <li><a href="../fizz_buzz/fizzBuzz.php">Week 6</a></li>
-        <li><a href="../fizz_buzz/fizzBuzz.php">Week 7</a></li>
-        <li><a href="../fizz_buzz/fizzBuzz.php">Week 8</a></li>
-        <li><a href="../fizz_buzz/fizzBuzz.php">Week 9</a></li>
+        <li><a href="../intake_form//intakeform.php">Week 2 Intake Form</a></li>
+        <li><a href="./placeholder.php">Week 3</a></li>
+        <li><a href="./placeholder.php">Week 4</a></li>
+        <li><a href="./placeholder.php">Week 5</a></li>
+        <li><a href="./placeholder.php">Week 6</a></li>
+        <li><a href="./placeholder.php">Week 7</a></li>
+        <li><a href="./placeholder.php">Week 8</a></li>
+        <li><a href="./placeholder.php">Week 9</a></li>
         <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Week 10</a></li>
     </ul>
     <?php include __DIR__ . './footer.php'; ?>
