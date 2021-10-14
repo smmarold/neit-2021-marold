@@ -22,6 +22,7 @@
     </style>
 </head>
 <body>
+<!-- Same header as other pages. -->
 <div class = 'navbar'>
         <a href="./index.php">Home</a>
         <a href="https://github.com/smmarold/neit-2021-smarold/tree/main/SE266" target="_blank">GitHub Repo</a>
@@ -29,7 +30,7 @@
         <a href="./gitResources.php">GitHub Resources</a>
         <a href="./hobbies.php">What I Do</a>
     </div>
-
+    <!-- Links to my php Resourses. Documentation, a tutorial, and a video--> 
     <h1>PHP Resources</h1>
     <ul>
         <li><a href="https://www.php.net/docs.php" target="_blank">PHP.net Documentation</a></li>

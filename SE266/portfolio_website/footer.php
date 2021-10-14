@@ -1,3 +1,6 @@
+<!--Footer fort the bottom of each page. Formula for echoing the date is taken 
+from the example code provided by Erik in the course modules.  -->
+
 <hr />          
     <?php       
         $file = basename($_SERVER['PHP_SELF']);

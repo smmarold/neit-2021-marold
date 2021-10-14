@@ -22,6 +22,7 @@
     </style>
 </head>
 <body>
+<!-- Header stuff. Most buttons link to another php page, repo links to repo -->
 <div class = 'navbar'>
         <a href="./index.php">Home</a>
         <a href="https://github.com/smmarold/neit-2021-smarold/tree/main/SE266" target="_blank">GitHub Repo</a>
@@ -31,7 +32,7 @@
     </div>
     <div id='header-bar'><h1>Stephen Marold</h1></div>
     <p>This is my page, where I show off how awesome I am! Hope you like it!</p>
-
+<!--My Assignments. Using a single placeholder page/link for assignments not yet complete -->
     <h2>My Assignments</h2>
     <ul>
         <li><a href="../fizz_buzz/fizzBuzz.php">Week 1-Fizz Buzz</a></li>
@@ -45,4 +46,6 @@
         <li><a href="./placeholder.php">Week 9</a></li>
         <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Week 10</a></li>
     </ul>
+    <!-- Include the footer file for getting the date. Date Formula was taken from the example 
+        code provided in course modules. -->
     <?php include __DIR__ . './footer.php'; ?>

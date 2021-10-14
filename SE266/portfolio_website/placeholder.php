@@ -1,3 +1,5 @@
+<!-- Placeholder page for incomplete assignments. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
