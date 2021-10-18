@@ -35,7 +35,7 @@
     <h2>My Assignments</h2>
     <ul>
         <li><a href="../fizz_buzz/fizzBuzz.php">Week 1-Fizz Buzz</a></li>
-        <li><a href="../intake_form//intakeform.php">Week 2 Intake Form</a></li>
+        <li><a href="../intake_form/intakeform.php">Week 2 Intake Form</a></li>
         <li><a href="./placeholder.php">Week 3</a></li>
         <li><a href="./placeholder.php">Week 4</a></li>
         <li><a href="./placeholder.php">Week 5</a></li>
