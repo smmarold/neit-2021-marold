@@ -36,4 +36,4 @@
         <li><a href="https://www.w3schools.com/php/" target="_blank">w3schools PHP</a></li>
         <li><a href="https://www.youtube.com/watch?v=XBj_le81sAc" target="_blank">PHP Tutorial Videos</a></li>
     </ul>
-    <?php include __DIR__ . './footer.php'; ?>
+    <?php include('footer.php'); ?>

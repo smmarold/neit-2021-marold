@@ -32,4 +32,4 @@
 
     <h1>Assignment Placeholder</h1>
     <p>Placeholder Page</p>
-    <?php include __DIR__ . './footer.php'; ?>
+    <?php include('footer.php');?>

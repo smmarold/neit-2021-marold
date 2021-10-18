@@ -36,4 +36,4 @@
         <li><a href="https://www.youtube.com/watch?v=yUi0gsxVHZM&t=92s" target="_blank">Playing Pirate (No, that's NOT me...yet)</a></li>
         <li><a href="https://www.teamworkswarwick.com/" target="_blank">Playing Sports</a></li>
     </ul>
-    <?php include __DIR__ . './footer.php'; ?>
+    <?php include('footer.php'); ?>

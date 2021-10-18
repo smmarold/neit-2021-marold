@@ -36,4 +36,4 @@
         <li><a href="https://www.w3schools.com/git/" target="_blank">w3schools Git</a></li>
         <li><a href="https://www.youtube.com/watch?v=8JJ101D3knE" target="_blank">Git Tutorial Video</a></li>
     </ul>
-    <?php include __DIR__ . './footer.php'; ?>
+    <?php include('footer.php'); ?>
