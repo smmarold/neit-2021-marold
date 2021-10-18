@@ -105,7 +105,7 @@
             <!-- If our form was submitted and we have no errors, call the BMI and Age functions
                 using the information we got on submit, then diplay the results below the form. -->
             <?php 
-                if(isset($_POST['submitBtn']) && $error == ''):
+                if(isset($_POST['submitBtn']) && $error == ''){
                     $age = getAge($birthday);
                     $BMI = calcBMI($htFeet, $htInches, $weight);
                     $classification = bmiClassifier($BMI);
@@ -114,7 +114,7 @@
                 <div class="fieldLabel">Patient BMI: <?= $BMI?></div><br />
                 <div class="fieldLabel">BMI classification: <?= $classification?></div>
             <?php        
-                endif;
+                }
             ?>
         </div>
     </form>
