@@ -45,4 +45,4 @@
         <li><a href="./placeholder.php">Week 9</a></li>
         <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Week 10</a></li>
     </ul>
-    <?php include __DIR__ . './footer.php'; ?>
+    <?php include('footer.php'); ?>

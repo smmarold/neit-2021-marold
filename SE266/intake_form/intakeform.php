@@ -1,6 +1,6 @@
 <?php 
     //Include the functions php doc for our BMI and Age funcs
-    include __DIR__ . './functions.php';
+    include('functions.php');
 
     //Initialize Error and Married
     $error = '';
