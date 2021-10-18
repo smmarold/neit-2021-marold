@@ -99,7 +99,7 @@
             <input type="text" name="heightInches" size="3" value="<?= $htInches; ?>"/></div>
             <div><label class="fieldLabel">Weight: </label></div>
             <div><input type="text" name="weight" size="4" value="<?= $weight; ?>"/> lbs<br /></div>
-            <div><input type="submit" name="submitBtn" /></div>
+            <div><input type="submit" name="submitBtn" value="Process Patient"/></div>
             <br />
             <br />
             <!-- If our form was submitted and we have no errors, call the BMI and Age functions
