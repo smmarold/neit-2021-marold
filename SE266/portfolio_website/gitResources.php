@@ -29,7 +29,7 @@
         <a href="./gitResources.php">GitHub Resources</a>
         <a href="./hobbies.php">What I Do</a>
     </div>
-        <!-- Links to my Git Resourses. Documentation, a tutorial, and a video--> 
+
     <h1>GIT Resources</h1>
     <ul>
         <li><a href="https://git-scm.com/docs" target="_blank">Git Reference Manual</a></li>

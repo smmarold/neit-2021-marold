@@ -22,7 +22,6 @@
     </style>
 </head>
 <body>
-    <!-- Same header as other pages.  -->
 <div class = 'navbar'>
         <a href="./index.php">Home</a>
         <a href="https://github.com/smmarold/neit-2021-smarold/tree/main/SE266" target="_blank">GitHub Repo</a>
@@ -30,7 +29,7 @@
         <a href="./gitResources.php">GitHub Resources</a>
         <a href="./hobbies.php">What I Do</a>
     </div>
-        <!-- Links to things representing what I do for fun --> 
+
     <h1>What I Do When I'm Not Coding</h1>
     <ul>
         <li><a href="https://www.youtube.com/watch?v=9W88DiTGwe8" target="_blank">Playing Rockstar (Yes, that's me!)</a></li>
