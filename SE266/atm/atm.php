@@ -1,5 +1,5 @@
 <?php 
-    include __DIR__ . './account.php';
+    include('account.php');
 
     //Initialize a var for storing messages to user if needed. 
     $insuffFunds = '';
