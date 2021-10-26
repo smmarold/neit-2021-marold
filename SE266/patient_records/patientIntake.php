@@ -1,7 +1,7 @@
 <?php 
     //Since this intake form is so similar to our previous form on another lab, I copied it over
     // This way I could simply remove the unneccessary fields, and still have the form validation. 
-    include __DIR__ . './models/model_patients.php';
+    include(__DIR__ . './models/model_patients.php');
 
     //Initialize Error and Married
     $error = '';

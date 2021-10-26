@@ -1,6 +1,6 @@
 <?php 
 //Include the db.php which has our connection and PDO. 
-include __DIR__ . '/db.php';
+include (__DIR__ . '/db.php');
 
 //returns all records in patients table. 
 function getPatients(){
