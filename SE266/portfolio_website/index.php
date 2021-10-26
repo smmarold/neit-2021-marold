@@ -36,7 +36,7 @@
     <ul>
         <li><a href="../fizz_buzz/fizzBuzz.php">Week 1-Fizz Buzz</a></li>
         <li><a href="../intake_form/intakeform.php">Week 2 Intake Form</a></li>
-        <li><a href="../atm/atm.php">Week 3</a></li>
+        <li><a href="../atm/atm.php">Week 3 ATM App</a></li>
         <li><a href="../patient_records/view.php">Week 4 View and Add Patients</a></li>
         <li><a href="./placeholder.php">Week 5</a></li>
         <li><a href="./placeholder.php">Week 6</a></li>
