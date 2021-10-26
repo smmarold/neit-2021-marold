@@ -1,7 +1,7 @@
 <?php 
     //Include model file for get/add functions, as well as functions (for getAge() later in the file)
     include('functions.php');
-    include('models/model_patients.php');
+    include('./model/model_patients.php');
     //Call getPatients, and store in var. Will loop through later. 
     $patients = getPatients();
 ?>
