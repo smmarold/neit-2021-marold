@@ -1,8 +1,8 @@
 <?php 
     //This form is similar to the original Intake form. We now include ways to edit and update the Patient in our records. 
     //I was also able to keep basic form validation from the previous lab (just checking that everything is filled out)
-    include(__DIR__ . '/models/model_patients.php');
-    include(__DIR__ . '/functions.php');
+    include('functions.php');
+    include('models/model_patients.php');
 
     //initialize variables that need initializing. 
     //If not initialized every page load, these (except error) will throw errors if left blank and a blank form is submitted.

@@ -1,7 +1,7 @@
 <?php 
     //Include model file for get/add functions, as well as functions (for getAge() later in the file)
-    include(__DIR__ . '/functions.php');
-    include(__DIR__ . '/models/model_patients.php');
+    include('functions.php');
+    include('models/model_patients.php');
 
     //if there is a post request (which can only mean we pressed a delete icon), call deletePatient with the id of the row it was clicked in. 
     if(isset($_POST['submitBtn'])){
