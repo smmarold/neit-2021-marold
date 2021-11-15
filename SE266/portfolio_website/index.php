@@ -40,7 +40,7 @@
         <li><a href="../patient_records/view.php">Week 4 View and Add Patients</a></li>
         <li><a href="../patient_records_wk5/view.php">Week 5 Patient CRUD</a></li>
         <li><a href="../school_upload/login.php">Week 6 School Upload</a></li>
-        <li><a href="./placeholder.php">Week 7</a></li>
+        <li><a href="../patient_records_wk7/login.php">Week 7 Patient Records w/ Login</a></li>
         <li><a href="./placeholder.php">Week 8</a></li>
         <li><a href="./placeholder.php">Week 9</a></li>
         <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Week 10</a></li>
