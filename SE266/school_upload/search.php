@@ -1,7 +1,7 @@
 <?php 
 
-include_once __DIR__ . '/models/model_schools.php';
-include_once __DIR__ . '/includes/functions.php';
+include('models/model_schools.php');
+include('includes/functions.php');
 
 //Initialize our vars.
 $schoolName = '';
@@ -16,7 +16,7 @@ if(isPostRequest()){
     $schools = getSchools($schoolName, $city, $state);
 }
 
-include_once __DIR__ . '/includes/header.php';
+include('includes/header.php');
 
 ?>
 
@@ -73,7 +73,7 @@ include_once __DIR__ . '/includes/header.php';
             </tbody>
         </table>
     <?php } 
-        include_once __DIR__ . '/includes/footer.php';
+        include('includes/footer.php');
     ?>
 
 </body>

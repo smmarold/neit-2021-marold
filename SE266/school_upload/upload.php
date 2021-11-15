@@ -1,7 +1,7 @@
 <?php 
 
-    include_once __DIR__ . '/models/model_schools.php';
-    include_once __DIR__ . '/includes/functions.php';
+    include('models/model_schools.php');
+    include('includes/functions.php');
 
     $result = 'File Uploaded!'; //Error Var
 
@@ -20,7 +20,7 @@
     } else 
         $result = 'No File to upload';
 
-    include_once __DIR__ . '/includes/header.php';
+    include('/includes/header.php');
 
 ?>
 
@@ -57,7 +57,7 @@
     </form>
 
     <?php 
-        include_once __DIR__ . '/includes/footer.php';
+        include('includes/footer.php');
     ?>
 
 </body>

@@ -2,7 +2,7 @@
 
     //This code is from the example code on the repository. I have commented each section to 
     // show an understanding of what each piece of code does. 
-    include(__DIR__ . '/db.php');
+    include('db.php');
 
     //function for taking the school file, reading and organizing it into a SQL statement, then uploading to our DB. 
     function insertSchoolsFromFile($fname) {

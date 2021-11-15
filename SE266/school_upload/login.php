@@ -1,6 +1,6 @@
 <?php
-    include_once __DIR__ . "/models/model_schools.php";
-    include_once __DIR__ . "/includes/functions.php";
+    include("models/model_schools.php");
+    include("includes/functions.php");
 
     session_start();//Start the session
 
