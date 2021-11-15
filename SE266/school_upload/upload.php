@@ -20,7 +20,7 @@
     } else 
         $result = 'No File to upload';
 
-    include('/includes/header.php');
+    include('includes/header.php');
 
 ?>
 
