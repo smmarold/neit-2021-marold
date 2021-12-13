@@ -42,7 +42,6 @@
         <li><a href="../school_upload/login.php">Week 6 School Upload</a></li>
         <li><a href="../patient_records_wk7/login.php">Week 7 Patient Records w/ Login</a></li>
         <li><a href="./placeholder.php">Week 8</a></li>
-        <li><a href="./placeholder.php">Week 9</a></li>
-        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Week 10</a></li>
+        <li><a href="../FinalProject/login.php" >Week 10 Final Project</a></li>
     </ul>
     <?php include('footer.php'); ?>
