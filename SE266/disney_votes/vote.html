@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney Votes</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .wrapper{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .characterDiv{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 10px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Vote for the BEST Disney Character!</h1>
+    <div class="wrapper">
+        <div class="characterDiv">
+            <img src="donald.png">
+            <button id="donald" type="button" class="btn btn-success"> Vote Donald</button>
+        </div>
+        <div class="characterDiv">
+            <img src="mickey.png">
+            <button id="mickey" type="button" class="btn btn-success"> Vote Mickey</button>
+        </div>
+        <div class="characterDiv">
+            <img src="goofy.png">
+            <button id="goofy" type="button" class="btn btn-success"> Vote Goofy</button>
+        </div>
+        <div class="chart">
+            <canvas id="voteResults" style="display: block; width: 398px; height: 199px;" width="398" height="199"></canvas>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    //Was getting errors with updating the chart, so these vars are part of my solution. 
+    var canvas = document.getElementById('voteResults');
+    var canvasChart;
+    //get the button elements and add event listeners, calling vote and passing the appropriate ID to them. 
+    voteDonald = document.getElementById('donald').addEventListener('click', function(){vote('1')});
+    voteMickey = document.getElementById('mickey').addEventListener('click', function(){vote('2')});
+    voteGoofy = document.getElementById('goofy').addEventListener('click', function(){vote('3')});
+
+    //the vote function takes the character id, and makes a fetch request to vote.php with the id of the voted char. 
+    async function vote(charId){
+        let url = 'vote.php';
+        let data = {character_id: charId, action: "vote"};
+        
+
+        try{
+            let response = await fetch(url, {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            votes = await response.json();
+            console.log(votes);
+            //update the chart with the results. false tells the function whether it is the initial creation of the chart or not. 
+            displayChart(votes, false);
+        } catch(error) {
+            console.error(error);
+        }
+    }
+
+    //Same as vote, but since it is on initial page load, we aren't sending data, just getting it. 
+    async function loadPage(){
+        let url = 'vote.php';
+        let data = {action: "get"};
+
+        try{
+            let response = await fetch(url, {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            votes = await response.json();
+            console.log(votes);
+            //Create the chart. The true tells the function this is the first instance of the chart. explained in func. 
+            displayChart(votes, true);
+        } catch(error) {
+            console.error(error);
+        }
+    } 
+
+    //Here, I created a function for creating the chart. I was getting an error when I tried to call after the chart was already updated. There wasn't anything in the
+    //videos that helped with this, and it seems I had to destroy the original chart before creating a new one (simply calling update wasn't working either)
+    //my solution is to take a second parameter that tells the function whether this is the initial creation of the chart or not. 
+    //If it is the first creation (on page load), we skip destroying the chart, as it does not exist yet. Otherwise, we destroy the chart and create a new one. 
+    //This has the added benefit of animating the chart each time a vote is cast. I'm sure there is a less clunky solution to my problem, but this worked and I 
+    //would rather not mess with it at this point. 
+
+    function displayChart(votes, isInitial){
+        if(!isInitial)
+            canvasChart.destroy();
+
+        canvasChart = new Chart(canvas, {
+            type: 'bar',
+            data: {
+                labels: votes[0],
+                datasets: [
+                    {
+                        label: "Character", 
+                        backgroundColor: ["blue", "red", "green"], 
+                        data: votes[1]
+                    }
+                ]
+            },
+            options: {
+                legend: { display: false },
+                title: {
+                    display:true,
+                    text: "Voting Results"
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }           
+            }
+        });
+    }
+    //Call load page here to create the chart for the first time. 
+    loadPage();
+</script>
